@@ -6,147 +6,116 @@
     <title>Sanya's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c76344263e.js" crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PX9YG2G1Z6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PX9YG2G1Z6');
+    </script>
+    <!-- End Google tag -->
+
 </head>
 <body>
     <div id="header">
-    <div class="container">
-        <nav>
-            <img src="./portfolio.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>WEB DEVELOPER</p>
-            <h1>Hi, I'm <span id="user-id">Sanya</span> Bhatia</h1>
-        </div>
-    </div>
-</div>  
-<!-- -------------about-------------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="./user image.jpg" alt="">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <!-- <div class="tab-title">
-                    <p class="tab-links active-links" onclick="opentab('description')">Desciption</p>
-                    <p class="tab-links" onclick="opentab('skills')">Technical Skills</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div> -->
-                <div class="tab-title">
-                    <p class="tab-links active-links" data-tab="description">Description</p>
-                    <p class="tab-links" data-tab="skills">Technical Skills</p>
-                    <p class="tab-links" data-tab="education">Education</p>
-                </div>
-                
-                <div class="tab-contents active-tab" id="description">
-                    <p class="des-content">I’m a Computer Science and AI student at ABESIT, graduating in 2025, with a passion for web development. I have intermediate skills in Java and JavaScript, and knowledge in Python and C. My main focus is front-end development, where I enjoy creating clean and functional user interfaces. I'm always eager to learn new things and improve my skills, with a goal to build user-friendly and efficient web applications. I’m excited about the possibilities of combining AI with web development to create innovative solutions. Let’s connect and explore opportunities to collaborate.</p>
-                </div>
-                <div class="tab-contents" id="skills">
-                    <ul>
-                        <li class="skill-content">Java</li>
-                        <li class="skill-content">HTML & CSS</li>
-                        <li class="skill-content">JavaScript</li>
-                        <li class="skill-content">Python</li>
-                        <li class="skill-content">Object Oriented Programming</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li class="education-content"><span class="edu">2020-2021</span><br>XII(PCM)<br>Bhai Parmanand Vidya Mandir<br>90%</li>
-                        <li class="education-content"><span class="edu">2021-2025</span><br>B.Tech in Computer Science(AI)<br>Dr. A.P.J. Abdul Kalam Technical University(ABESIT) <br>GPA-7.8</li>
-                    </ul>
-                </div>
+        <div class="container">
+            <nav>
+                <img src="./portfolio.png" alt="Sanya Bhatia's Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>WEB DEVELOPER</p>
+                <h1>Hi, I'm <span id="user-id">Sanya</span> Bhatia</h1>
             </div>
         </div>
-    </div>
-</div>
-<!-- -------------------projects------------------ -->
-<div id="projects">
-    <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="project-list">
-            <div class="work">
-                <img src="./film fact.png" alt="">
-                <div class="layer">
-                    <h3>Film Fact Finder</h3>
-                    <p>Film Facts Finder is a web application developed with HTML, CSS, and JavaScript that provides comprehensive movie information using the OMDB API, making it easy to explore film details and visuals.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+    </div>  
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./user image.jpg" alt="Sanya Bhatia's profile picture">
                 </div>
-            </div>
-            <div class="work">
-                <img src="./e-commerce.png" alt="">
-                <div class="layer">
-                    <h3>E-Commerce Website Comparator</h3>
-                    <p>E-Commerce Website Comparator is a Python-based web app that uses web scraping to compare product ratings and prices between Flipkart and Amazon, helping users save time and money.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="./amazon.png" alt="">
-                <div class="layer">
-                    <h3>Amazon-Clone</h3>
-                    <p>Amazon Clone is a frontend project replicating the Amazon homepage using HTML and CSS, showcasing design accuracy and dynamic content integration.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="tab-title">
+                        <p class="tab-links active-links" data-tab="description">Description</p>
+                        <p class="tab-links" data-tab="skills">Technical Skills</p>
+                        <p class="tab-links" data-tab="experience">Internship Experience</p>
+                        <p class="tab-links" data-tab="education">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="description">
+                        <p class="des-content">I’m a Computer Science and AI student at ABESIT, graduating in 2025, with a passion for web development. I have intermediate skills in Java and JavaScript, and knowledge in Python and C. My main focus is front-end development, where I enjoy creating clean and functional user interfaces. I'm always eager to learn new things and improve my skills, with a goal to build user-friendly and efficient web applications. I’m excited about the possibilities of combining AI with web development to create innovative solutions. Let’s connect and explore opportunities to collaborate.</p>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li class="skill-content">Java</li>
+                            <li class="skill-content">HTML & CSS</li>
+                            <li class="skill-content">JavaScript</li>
+                            <li class="skill-content">Python</li>
+                            <li class="skill-content">Object Oriented Programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <h2>Internship Experience</h2>
+                        <h3>Bharat Electronics Limited – Intern</h3>
+                        <p>October 2024 – Present</p>
+                        <ul>
+                            <li class="skill-content">Strengthening C programming skills through <strong>15+ system programming tasks</strong>, focusing on memory management and pointers.</li>
+                            <li class="skill-content">Exploring advanced OOP concepts in C++ to apply <strong>5+ key features</strong> (e.g., polymorphism, inheritance) for modular design.</li>
+                            <li class="skill-content">Developing a UI application using QT Creator, projected to improve system monitoring efficiency by <strong>20%</strong>.</li>
+                            <li class="skill-content">Expected to implement multithreading and file handling for <strong>50% faster response times</strong>.</li>
+                            <li class="skill-content">Collaborating on applying TCP/UDP protocols for a more robust UI system.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li class="education-content"><span class="edu">2020-2021</span><br>XII(PCM)<br>Bhai Parmanand Vidya Mandir<br>90%</li>
+                            <li class="education-content"><span class="edu">2021-2025</span><br>B.Tech in Computer Science(AI)<br>Dr. A.P.J. Abdul Kalam Technical University(ABESIT) <br>GPA-7.8</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- -------------------------contact-------------------- -->
- <div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><a class="mail-icon" href="mailto:bhatiasanya1410@gmail.com"><i class="fa-solid fa-paper-plane"></i></a>bhatiasanya1410@gmail.com</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/sanyabhatia/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/sanyaaaa14"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="./Sanya_Resume.S.pdf" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button class="btn btn2" type="submit">Submit</button>
-                </form>
-            <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-  <div class="copyright">
-    <p>Copyright © Sanya.</p>
-  </div>
- </div>
-<script src="app.js"></script>
-<!-- <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz3vS_7a-C_DQEfcS2oqTS6kxU8QWQunS8bC2dD-iXuXwvaQj-hKDv30OUy0nHJM_RxcA/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg=document.getElementById('msg')
 
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-        msg.innerHTML="Message sent successfully"
-        setTimeout(function(){
-            msg.innerHTML=""
-        },5000)
-        form.reset()
-    })
-    .catch(error => console.error('Error!', error.message))
-})
-</script> -->
+    <!-- -------------------------contact-------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a class="mail-icon" href="mailto:bhatiasanya1410@gmail.com"><i class="fa-solid fa-paper-plane"></i></a>bhatiasanya1410@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sanyabhatia/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sanyaaaa14"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="./Sanya_Resume.S.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sanya.</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
